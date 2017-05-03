@@ -3,6 +3,7 @@ import bindAll from 'lodash';
 import classnames from 'classnames';
 import moment from 'moment';
 import Calendar from './calendar';
+import Time from './time';
 
 import './styles.less';
 
@@ -68,7 +69,7 @@ export default class Datetime extends React.Component {
         const wrapperClasses = classnames('dt-popup', {'is-open': isOpen});
 
         return (
-            <div className='p-datetime'>
+            <div className='b-datetime'>
                 <div className='dt-input'>
                     <input value={ m.format( this.props.format ) } type='text' onFocus={ this.handleFocus }/>
                 </div>
