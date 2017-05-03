@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import bindAll from 'lodash';
+import { bindAll } from 'lodash';
 import classnames from 'classnames';
 import moment from 'moment';
 import Calendar from './calendar';
@@ -25,7 +25,7 @@ export default class Datetime extends React.Component {
     constructor(props) {
         super(props);
 
-        bindAll(this, ['handleFocus', 'handleSave', 'handleChange']);
+        bindAll(this, ['handleFocus', 'handleSave', 'handleChange', 'toggle']);
 
         this.state = {
             isOpen: false,
